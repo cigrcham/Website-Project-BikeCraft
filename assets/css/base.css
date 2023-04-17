@@ -1,10 +1,14 @@
 :root {
+   /* Size */
    --header-height: 60px;
 
-
+   /* Color */
    --black-color: #000;
-   --white-color: #fff;
-
+   --white-color: #ffffff;
+   --gray-color: #808080;
+   --not-choose-color: rgba(255, 255, 255, 0.6);
+   --choose-color: rgba(255, 255, 255, 1);
+   --choose-background-color: #2e2e2e;
 }
 
 * {
@@ -51,11 +55,12 @@ html {
    list-style: none;
    justify-content: end;
 }
+
 .header-nav__link {
    margin-right: 36px;
    text-decoration: none;
    font-size: 1.8rem;
-   color: var(--white-color);
+   color: var(--not-choose-color);
    display: block;
    padding: 0 26px;
    line-height: var(--header-height);
@@ -74,14 +79,30 @@ html {
    background-repeat: no-repeat;
    transition: background-size 200ms linear, transform 200ms linear;
 }
+
 .header-nav__link:last-child {
    margin-right: 10px;
 }
+
+.header-nav__link-current {
+   color: var(--choose-color);
+   margin-right: 36px;
+   text-decoration: none;
+   font-size: 2.1rem;
+   display: block;
+   padding: 0 26px;
+   line-height: var(--header-height);
+   font-weight: 500;
+   border-radius: 9px;
+   transform: scale(1.1);
+   transform: translateX(1px) translateY(1px);
+}
+
 /* Animation */
 .header-nav__link:hover {
    background-size: 0 2px, 100% 2px;
    transform: scale(1.1);
-   transform: translateX(1px), translateY(1px);
+   transform: translateX(1px) translateY(1px);
 }
 
 /* Cart */
@@ -91,7 +112,8 @@ html {
    transition: transform 200ms linear;
 }
 
-.cart__icon, .login__icon {
+.cart__icon,
+.login__icon {
    font-size: 2rem;
    color: white;
    line-height: var(--header-height);
@@ -104,14 +126,19 @@ html {
    height: var(--header-height);
    transition: transform 200ms linear;
 }
-.header-nav__login:hover, .header-nav__cart:hover {
+
+.header-nav__login:hover,
+.header-nav__cart:hover {
    transform: scale(1.2);
 }
 
 .login__icon {
    font-size: 2.5rem;
 }
-.login__icon--hide {
+
+.login__icon--hide,
+.cart_icon--hide,
+.login__title--hide {
    display: none;
 }
 
@@ -120,7 +147,4 @@ html {
    font-size: 1.6rem;
    font-weight: 500;
    line-height: var(--header-height);
-}
-.login__title--hide {
-   display: none;
 }

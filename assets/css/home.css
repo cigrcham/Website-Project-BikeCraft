@@ -1,0 +1,44 @@
+:root {
+   --banner-height: 690px;
+}
+
+.banner {
+   background-color: var(--black-color);
+   height: var(--banner-height);
+   position: relative;
+}
+
+.banner>.grid {
+   height: var(--banner-height);
+}
+
+.banner-content {
+   padding-top: calc(var(--banner-height) * 0.26);
+   color: var(--gray-color);
+   font-size: 3rem;
+   width: 60%;
+   margin-left: 0;
+   font-weight: 300;
+   line-height: 3rem;
+   text-align: justify;
+
+
+}
+
+.banner-content__title {
+   color: white;
+   font-size: 5rem;
+   margin-bottom: 40px;
+
+}
+.banner__corner {
+   position: absolute;
+   left: 36px;
+   bottom: 30px;
+}
+.banner__img {
+   position: absolute;
+   right: 10px;
+   top: 40px;
+   transform: scale(0.9);
+}
