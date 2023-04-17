@@ -9,6 +9,7 @@
    background-color: var(--black-color);
    height: var(--banner-height);
    position: relative;
+   padding-top: var(--header-height);
 }
 
 .banner>.grid {

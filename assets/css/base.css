@@ -30,6 +30,11 @@ html {
 .header {
    background-color: var(--black-color);
    height: var(--header-height);
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   z-index: 10;
 }
 
 .header-left {
@@ -86,12 +91,14 @@ html {
 .header-nav__link:last-child {
    margin-right: 10px;
 }
+
 /* Animation */
 .header-nav__link:hover {
    background-size: 0 2px, 100% 2px;
    transform: scale(1.1);
    transform: translateX(1px) translateY(1px);
 }
+
 .header-nav__link-current {
    color: var(--choose-color);
    margin-right: 36px;
@@ -172,6 +179,7 @@ html {
 
 
 }
+
 .footer-col__title {
    color: var(--second-color);
    font-size: 3rem;
@@ -190,7 +198,8 @@ html {
 }
 
 .footer__info,
-.footer__mail, .footer__info > a {
+.footer__mail,
+.footer__info>a {
    margin-bottom: 6px;
    color: var(--gray-color);
    text-decoration: none;
@@ -204,18 +213,21 @@ html {
    margin-left: 0;
    border-bottom: 1px solid var(--gray-color);
 }
+
 .footer__info__icon {
    display: flex;
    flex-direction: row;
    justify-content: start;
 }
+
 .footer__info__icon i {
    font-size: 2.6rem;
    padding: 0 10px 0 10px;
    margin-left: 16px;
 }
+
 .author {
    color: var(--white-color);
    font-size: 2.65;
-   
+
 }
