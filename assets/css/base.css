@@ -11,6 +11,7 @@
    --choose-color: rgba(255, 255, 255, 1);
    --choose-background-color: #2e2e2e;
    --second-color: #FFBB00;
+
 }
 
 
@@ -19,7 +20,9 @@
    padding: 0;
    margin: 0;
 }
-
+html,body{
+   overflow-x: hidden;
+}
 html {
    font-size: 62.5%;
    line-height: 1.6rem;
@@ -98,7 +101,7 @@ html {
 
 .header-nav__link-current {
    color: var(--choose-color);
-   margin:0 26px;
+   margin: 0 26px;
    text-decoration: none;
    font-size: 2.1rem;
    display: block;
@@ -113,11 +116,14 @@ html {
 
 
 /* Cart */
-.header-nav__cart {
+.header-nav__cart,
+.nav-mobile__list,
+.header-nav__login {
    width: var(--header-height);
    height: var(--header-height);
    transition: transform 200ms linear;
 }
+
 .list__icon,
 .cart__icon,
 .login__icon {
@@ -128,12 +134,7 @@ html {
 }
 
 /* Login */
-.header-nav__login {
-   width: var(--header-height);
-   height: var(--header-height);
-   transition: transform 200ms linear;
-}
-
+.nav-mobile__list:hover,
 .header-nav__login:hover,
 .header-nav__cart:hover {
    transform: scale(1.2);
@@ -142,6 +143,7 @@ html {
 .login__icon {
    font-size: 2.5rem;
 }
+
 .login__icon--hide,
 .cart_icon--hide,
 .login__title--hide {
@@ -249,18 +251,3 @@ html {
 
 
 
-/* Responsive  */
-/* Tablet */
-@media (min-width:740px) and (max-width:1023px) {
-
-
-}
-
-/* Mobile */
-@media (max-width:739px) {
-   .header-nav__list--hide {
-      display: none;
-   }
-   
-
-}
