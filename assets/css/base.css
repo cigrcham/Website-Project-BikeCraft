@@ -11,6 +11,7 @@
    --choose-background-color: #2e2e2e;
 }
 
+
 * {
    box-sizing: border-box;
    padding: 0;
@@ -83,7 +84,12 @@ html {
 .header-nav__link:last-child {
    margin-right: 10px;
 }
-
+/* Animation */
+.header-nav__link:hover {
+   background-size: 0 2px, 100% 2px;
+   transform: scale(1.1);
+   transform: translateX(1px) translateY(1px);
+}
 .header-nav__link-current {
    color: var(--choose-color);
    margin-right: 36px;
@@ -98,12 +104,7 @@ html {
    transform: translateX(1px) translateY(1px);
 }
 
-/* Animation */
-.header-nav__link:hover {
-   background-size: 0 2px, 100% 2px;
-   transform: scale(1.1);
-   transform: translateX(1px) translateY(1px);
-}
+
 
 /* Cart */
 .header-nav__cart {
