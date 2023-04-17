@@ -1,0 +1,126 @@
+:root {
+   --header-height: 60px;
+
+
+   --black-color: #000;
+   --white-color: #fff;
+
+}
+
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+html {
+   font-size: 62.5%;
+   line-height: 1.6rem;
+   font-family: sans-serif;
+}
+
+/* Header */
+.header {
+   background-color: var(--black-color);
+   height: var(--header-height);
+}
+
+.header-left {
+   height: var(--header-height);
+}
+
+/* Logo */
+.logo {
+   color: white;
+   font-size: 3rem;
+   font-weight: 560;
+   text-align: center;
+   text-decoration: none;
+   line-height: var(--header-height);
+   display: inline-block;
+}
+
+.header-right {
+   display: flex;
+}
+
+/* Navigation */
+.header-nav__list {
+   flex: 1;
+   display: flex;
+   list-style: none;
+   justify-content: end;
+}
+.header-nav__link {
+   margin-right: 36px;
+   text-decoration: none;
+   font-size: 1.8rem;
+   color: var(--white-color);
+   display: block;
+   padding: 0 26px;
+   line-height: var(--header-height);
+   font-weight: 500;
+
+   /* Animation */
+   background:
+      linear-gradient(to right,
+         rgba(0, 0, 0, 1),
+         rgba(0, 0, 0, 1)),
+      linear-gradient(to right,
+         rgba(255, 255, 255, 1),
+         rgba(255, 255, 255, 1));
+   background-size: 100% 3px, 0 3px;
+   background-position: 80% 80%, 0 80%;
+   background-repeat: no-repeat;
+   transition: background-size 200ms linear, transform 200ms linear;
+}
+.header-nav__link:last-child {
+   margin-right: 10px;
+}
+/* Animation */
+.header-nav__link:hover {
+   background-size: 0 2px, 100% 2px;
+   transform: scale(1.1);
+   transform: translateX(1px), translateY(1px);
+}
+
+/* Cart */
+.header-nav__cart {
+   width: var(--header-height);
+   height: var(--header-height);
+   transition: transform 200ms linear;
+}
+
+.cart__icon, .login__icon {
+   font-size: 2rem;
+   color: white;
+   line-height: var(--header-height);
+   padding: 0 20px;
+}
+
+/* Login */
+.header-nav__login {
+   width: var(--header-height);
+   height: var(--header-height);
+   transition: transform 200ms linear;
+}
+.header-nav__login:hover, .header-nav__cart:hover {
+   transform: scale(1.2);
+}
+
+.login__icon {
+   font-size: 2.5rem;
+}
+.login__icon--hide {
+   display: none;
+}
+
+.login-title {
+   color: white;
+   font-size: 1.6rem;
+   font-weight: 500;
+   line-height: var(--header-height);
+}
+.login__title--hide {
+   display: none;
+}
