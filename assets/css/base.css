@@ -2,6 +2,7 @@
    /* Size */
    --header-height: 60px;
 
+
    /* Color */
    --black-color: #000;
    --white-color: #ffffff;
@@ -9,6 +10,7 @@
    --not-choose-color: rgba(255, 255, 255, 0.6);
    --choose-color: rgba(255, 255, 255, 1);
    --choose-background-color: #2e2e2e;
+   --second-color: #FFBB00;
 }
 
 
@@ -37,7 +39,7 @@ html {
 /* Logo */
 .logo {
    color: white;
-   font-size: 3rem;
+   font-size: 4.6rem;
    font-weight: 560;
    text-align: center;
    text-decoration: none;
@@ -148,4 +150,72 @@ html {
    font-size: 1.6rem;
    font-weight: 500;
    line-height: var(--header-height);
+}
+
+/* Footer */
+.footer {
+   background-color: var(--black-color);
+   width: 100%;
+   height: 300px;
+   bottom: 0;
+   left: 0;
+   right: 0;
+}
+
+.footer__title {
+   color: white;
+   font-size: 5rem;
+   line-height: 6rem;
+   margin-left: 30px;
+   margin-top: 12px;
+   font-weight: 500;
+
+
+}
+.footer-col__title {
+   color: var(--second-color);
+   font-size: 3rem;
+   line-height: 4rem;
+   margin-top: 36px;
+   margin-bottom: 10px;
+}
+
+.footer__list {
+   margin-left: 20px;
+   list-style: none;
+   font-size: 2rem;
+   line-height: 2rem;
+   font-weight: 300;
+
+}
+
+.footer__info,
+.footer__mail, .footer__info > a {
+   margin-bottom: 6px;
+   color: var(--gray-color);
+   text-decoration: none;
+   padding: 6px 0;
+}
+
+.separator {
+   width: 80%;
+   margin-top: 3px;
+   margin-bottom: 3px;
+   margin-left: 0;
+   border-bottom: 1px solid var(--gray-color);
+}
+.footer__info__icon {
+   display: flex;
+   flex-direction: row;
+   justify-content: start;
+}
+.footer__info__icon i {
+   font-size: 2.6rem;
+   padding: 0 10px 0 10px;
+   margin-left: 16px;
+}
+.author {
+   color: var(--white-color);
+   font-size: 2.65;
+   
 }
