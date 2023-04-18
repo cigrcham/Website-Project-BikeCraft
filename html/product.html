@@ -3,10 +3,11 @@
 
 <head>
    <title>BikCraft</title>
-   <link rel="stylesheet" href="/assets/fontawesome-free-6.4.0-web/css/all.css">
+   <link rel="stylesheet" href="/assets/fontawesome-free-6.4.0-web/css/all.min.css">
    <link rel="stylesheet" href="/assets/css/grid.css">
    <link rel="stylesheet" href="/assets/css/base.css">
    <link rel="stylesheet" href="/assets/css/product.css">
+   <link rel="icon" href="/assets/img/logo-head.png">
 
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,17 +18,40 @@
    <div class="main">
       <!-- Header -->
       <header class="header">
+         <!-- Navigation Mobile -->
+         <input type="checkbox" class="nav_input" id="nav--state" checked>
+         <label for="nav--state" class="nav__overlay">
+         </label>
+         <div class="navMobile">
+            <h3 class="navMobile__title">
+               <img src="/assets/img/logo-head.png" alt="">
+               bikcraft
+            </h3>
+            <ul class="nav-mobile__list nav-mobile__list--hide">
+               <div class="mobile-separator"></div>
+               <li><a href="/index.html" class="nav-mobile__link">About</a></li>
+               <li><a href="/html/product.html" class="nav-mobile__link nav-mobile__link--current">Product</a></li>
+               <li><a href="/html/product.html" class="nav-mobile__link">Contacts</a></li>
+            </ul>
+            <label for="nav--state" class="navMobile-close">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <path
+                     d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+               </svg>
+            </label>
+         </div>
          <div class="grid wide">
-            <div class=" row sm-gutter">
-               <div class="col l-4 m-6 c-6 header-left">
-                  <!-- Logo -->
-                  <a href="/index.html" class="logo">bikcraft</a>
-               </div>
-               <div class="col l-8 m-6 c-6 header-right">
-                  <ul class="header-nav__list">
+            <div class="row">
+               <label for="nav--state" class="nav-mobile__list__icon">
+                  <i class="list__icon fa-solid fa-list"></i>
+               </label>
+               <!-- Logo -->
+               <a href="/index.html" class="header__logo">bikcraft</a>
+               <div class=" header__nav">
+                  <ul class="header-nav__list header-nav__list--hide">
                      <li><a href="/index.html" class="header-nav__link">About</a></li>
-                     <li><a href="#" class="header-nav__link-current">Product</a></li>
-                     <li><a href="contact.html" class="header-nav__link">Contacts</a></li>
+                     <li><a href="/html/product.html" class="header-nav__link-current">Product</a></li>
+                     <li><a href="/html/contact.html" class="header-nav__link">Contacts</a></li>
                   </ul>
                   <!-- Cart -->
                   <!-- Display none: cart__icon--hide -->
@@ -43,71 +67,66 @@
                   </div>
                </div>
             </div>
-
-
-
-
-
-
-
-
-
          </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       </header>
 
-      <div class="appContainer">
+
+      <div class="app-contennt">
 
       </div>
 
-
-      <footer>
-
-
-
-
+      <!-- Footer -->
+      <footer class="footer">
+         <div class="grid wide">
+            <div class="row">
+               <div class="col l-4 m-12 c-12 footer-top">
+                  <div class="footer__logo">
+                     <img src="/assets/img/logo-head.png" alt="">
+                  </div>
+                  <h3 class="footer__title">
+                     bikcraft
+                  </h3>
+               </div>
+               <div class="col l-4 m-6 c-6">
+                  <h4 class="footer-col__title">Contacts</h4>
+                  <ul class="footer__list">
+                     <li class="footer__info">
+                        <a class="footer__mail" href="tel:+8468686868">+8468686868</a>
+                     </li>
+                     <li class="footer__info">
+                        <a class="footer__mail" href="mailto: bikecraft12@gmail.com"> bikecraft12@gmail.com</a>
+                     </li>
+                     <div class="separator"></div>
+                     <li class="footer__info">Ha Noi city</li>
+                     <li class="footer__info">Ho Chi Minh city</li>
+                     <div class="separator"></div>
+                     <li class="footer__info__icon">
+                        <div>
+                           <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div>
+                           <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div>
+                           <i class="fa-brands fa-youtube"></i>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col l-4 m-6 c-6">
+                  <h4 class="footer-col__title">Informations</h4>
+                  <ul class="footer__list">
+                     <li class="footer__info"><a href="/index.html">Abouts</a></li>
+                     <li class="footer__info">
+                        <a href="/html/contact.html">Contacts</a>
+                     </li>
+                     <div class="separator"></div>
+                     <li class="footer__info author">Cigrcham&#169;2023</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
       </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
    </div>
 </body>
 
