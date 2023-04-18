@@ -222,16 +222,12 @@
    outline: none;
 }
 
-
-
-
-
 @media (max-width:739px) {
    :root {
       --banner-height: 500px;
       --info-height: 360px;
    }
-   
+
    .banner__corner {
       left: 80%;
       bottom: 36px;
