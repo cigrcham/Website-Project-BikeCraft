@@ -54,9 +54,9 @@
                   </ul>
                   <!-- Cart -->
                   <!-- Display none: cart__icon--hide -->
-                  <div class="header-nav__cart ">
+                  <label for="cart--state" class="header-nav__cart ">
                      <i class="cart__icon fa-solid fa-cart-shopping"></i>
-                  </div>
+                  </label>
                   <!-- Login -->
                   <div class="header-nav__login">
                      <!-- Display none: login__icon--hide -->
@@ -67,6 +67,58 @@
                </div>
             </div>
          </div>
+
+         <!-- Overlay Cart  -->
+         <input type="checkbox" id="cart--state" class="cart__input" checked>
+         <label for="cart--state" class="cart-overlay"></label>
+
+         <div class="cart-container">
+            <h3 class="cart__title">
+               Giỏ hàng
+            </h3>
+            <ul class="cart__list">
+
+               <!-- <li class="cart__item">
+                  <div class="item-top">
+                     <p class="cart__item__position">1, </p>
+                     <p class="cart__item__title">Xe đạp Gammax</p>
+                  </div>
+                  <div class="item-bottom">
+                     <p class="cart__item__cost">4.000.000</p>
+                     <button class="cart__item__minus">-</button>
+                     <div class="cart__item__quanlity">2</div>
+                     <button class="cart__item__plus">+</button>
+                     <button class="cart__item__delete">
+                        <i class="fa-solid fa-trash"></i>
+                     </button>
+                  </div>
+               </li> -->
+            </ul>
+
+<!-- 
+            <div class="cart__total">
+               <h4 class="total__title">Tổng tiền: </h4>
+               <p class="total__num">10.000.000</p>
+            </div> -->
+
+
+
+
+
+            <label for="cart--state" class="cart-close">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <path
+                     d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+               </svg>
+            </label>
+
+
+         </div>
+
+
+
+
+
       </header>
 
       <div class="app_container">
@@ -97,6 +149,77 @@
                         </li>
                         <li class="desc__item">
                            <i class="fa-regular fa-circle"></i>
+                           Có chắn bùn Đi kèm chân chống
+                        </li>
+                        <li class="desc__item">
+                           <i class="fa-regular fa-circle"></i>
+                           BKS-1085
+                        </li>
+                     </ul>
+                     <div class="desc__cost">
+                        14.000.000
+                     </div>
+                  </div>
+                  <button class="desc__btn" onclick="increaseQuantity(true, 0)">Mua</button>
+               </div>
+            </div>
+
+            <div class="row bike__item">
+               <div class="col l-4 m-4 c-12 bike__img">
+                  <img src="/assets/img/product_2.png" alt="">
+               </div>
+
+               <div class="col l-8 m-8 c-12 ">
+                  <div class="bike__desc">
+                     <h6 class="desc__title">Xe đạp địa hình MTB </h6>
+                     <p class="desc__desc">Mô tả</p>
+                     <ul class="desc__list">
+                        <li class="desc__item">
+                           <i class="fa-regular fa-circle"></i>
+                           Sơn tĩnh điện
+                        </li>
+                        <li class="desc__item">
+                           <i class="fa-regular fa-circle"></i>
+                           Thép
+                        </li>
+                        <li class="desc__item">
+                           <i class="fa-regular fa-circle"></i>
+                           Có chắn bùn Đi kèm chân chống
+                        </li>
+                        <li class="desc__item">
+                           <i class="fa-regular fa-circle"></i>
+                           BKS-1085
+                        </li>
+                     </ul>
+                     <div class="desc__cost">
+                        5.000.000
+                     </div>
+                  </div>
+                  <button class="desc__btn" onclick="increaseQuantity(true, 1)">Mua</button>
+               </div>
+            </div>
+
+
+            <div class="row bike__item">
+               <div class="col l-4 m-4 c-12 bike__img">
+                  <img src="/assets/img/product_3.png" alt="">
+               </div>
+
+               <div class="col l-8 m-8 c-12 ">
+                  <div class="bike__desc">
+                     <h6 class="desc__title">Giant Rincon 2</h6>
+                     <p class="desc__desc">Mô tả</p>
+                     <ul class="desc__list">
+                        <li class="desc__item">
+                           <i class="fa-regular fa-circle"></i>
+                           Sơn tĩnh điện
+                        </li>
+                        <li class="desc__item">
+                           <i class="fa-regular fa-circle"></i>
+                           Thép
+                        </li>
+                        <li class="desc__item">
+                           <i class="fa-regular fa-circle"></i>
                            Có chắn bùnĐi kèm chân chống
                         </li>
                         <li class="desc__item">
@@ -105,12 +228,13 @@
                         </li>
                      </ul>
                      <div class="desc__cost">
-                        4.000.000
-                     </div> 
+                        4.00.000
+                     </div>
                   </div>
-                  <button class="desc__btn">Mua</button>
+                  <button class="desc__btn" onclick="increaseQuantity(true, 2)">Mua</button>
                </div>
             </div>
+
 
             <div class="row bike-ShowMore">
                <p>
@@ -126,14 +250,55 @@
                <div class="col l-3 m4 c-6">
                   <div class="phukien__item">
                      <div class="phukien__img">
-                        <img src="/assets/img/phukien_4.png" alt="">
+                        <img src="/assets/img/phukien_1.png" alt="">
                      </div>
                      <div class="phukien__desc">
-                        <p>salskdfjk</p>
-                        <button class="phukien_btn">Mua</button>
+                        <p class="phukien__title">Mũ</p>
+                        <p class="phukien__cost">100.000</p>
+                        <button class="phukien_btn" onclick="increaseQuantity(true, 3)" >Mua</button>
                      </div>
                   </div>
                </div>
+
+               <div class="col l-3 m4 c-6">
+                  <div class="phukien__item">
+                     <div class="phukien__img">
+                        <img src="/assets/img/phukien_2.png" alt="">
+                     </div>
+                     <div class="phukien__desc">
+                        <p class="phukien__title">Tay lái</p>
+                        <p class="phukien__cost">1.000.000</p>
+                        <button class="phukien_btn" onclick="increaseQuantity(true, 4)">Mua</button>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col l-3 m4 c-6">
+                  <div class="phukien__item">
+                     <div class="phukien__img">
+                        <img src="/assets/img/phukien_3.png" alt="">
+                     </div>
+                     <div class="phukien__desc">
+                        <p class="phukien__title">Chân chống</p>
+                        <p class="phukien__cost">300.000</p>
+                        <button class="phukien_btn" onclick="increaseQuantity(true, 5)">Mua</button>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col l-3 m4 c-6">
+                  <div class="phukien__item">
+                     <div class="phukien__img">
+                        <img src="/assets/img/phukien_4.png" alt="">
+                     </div>
+                     <div class="phukien__desc">
+                        <p class="phukien__title">Bánh xe</p>
+                        <p class="phukien__cost">400.000</p>
+                        <button class="phukien_btn" onclick="increaseQuantity(true, 6)">Mua</button>
+                     </div>
+                  </div>
+               </div>
+
             </div>
             <div class="row bike-ShowMore">
                <p>
@@ -196,6 +361,8 @@
          </div>
       </footer>
    </div>
+
+   <script src="/js/base.js"></script>
 </body>
 
 </html>

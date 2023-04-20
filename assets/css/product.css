@@ -219,7 +219,7 @@
    background-color: gray;
    border-radius: 3px;
    box-shadow: 0 3px 10px 0 rgba(255, 255, 255, 0.1), 0 2px 6px 2px rgba(255, 255, 255, 0.15);
-
+   margin-top: 21px;
 }
 
 .phukien__img {
@@ -239,10 +239,17 @@
 
 }
 
-.phukien__desc>p {
-   display: block;
+.phukien__title {
+   font-size: 3rem;
+   line-height: 3rem;
    color: white;
-   font-size: 2.1rem;
+}
+
+.phukien__cost {
+   color: orange;
+   font-size: 2rem;
+   line-height: 2rem;
+   margin-top: 46px;
 
 }
 
