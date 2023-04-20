@@ -219,7 +219,6 @@ html {
 .footer__info:hover>a {
    color: white;
 }
-
 .separator {
    width: 80%;
    margin-top: 3px;
@@ -258,7 +257,7 @@ html {
 }
 /* Responsive  */
 /* Tablet */
-@media (min-width:740px) and (max-width:1023px) {
+@media (min-width:740px){
    .navMobile, .nav__overlay {
       display: none;
    }
