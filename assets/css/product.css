@@ -3,8 +3,9 @@
 }
 
 .app_container {
-   height: 1000px;
-   margin-top: calc(var(--header-height) + 100px);
+   height: auto;
+   margin-top: calc(var(--header-height) + 60px);
+   margin-bottom: 20px;
    width: 100%;
 
 }
@@ -60,11 +61,10 @@
 /* Bike */
 .bike__item {
    height: var(--product-height);
-   margin-left: 30px;
    background-color: black;
    position: relative;
    border-radius: 6px;
-   margin-top: 30px;
+   margin: 20px 0 20px 30px;
 }
 
 .bike__img {
@@ -98,6 +98,7 @@
    margin-right: 260px;
    height: 100%;
 }
+
 .desc__title {
    margin-top: 36px;
    margin-left: 30px;
@@ -110,25 +111,28 @@
    font-size: 2.1rem;
    line-height: 2.1rem;
    margin-top: 30px;
-   
+
 
 
 
 
 }
+
 .desc__list {
    list-style: none;
-   
-   
-   
+
+
+
 
 }
+
 .desc__item {
    font-size: 1.6rem;
    line-height: 1.6rem;
    margin-top: 10px;
 
 }
+
 .desc__btn {
    font-size: 2.6rem;
    line-height: 2.6rem;
@@ -147,15 +151,16 @@
 }
 
 /* >= Tablet */
-@media (min-width: 740px) and (max-width:1050px) { 
+@media (min-width: 740px) and (max-width:1050px) {
 
    .bike__img {
       top: 0%;
       left: -40%;
 
-  
+
 
    }
+
    .bike__img>img {
       transform: scale(0.5);
    }
@@ -170,22 +175,76 @@
    :root {
       --product-height: 300px;
    }
-   .bike__item { 
+
+   .bike__item {
       margin-left: 0;
    }
+
    .bike__img {
       top: -28%;
       left: -36%;
 
-  
+
 
    }
+
    .bike__img>img {
       transform: scale(0.4);
    }
+
    .bike__desc {
       margin-right: 50px;
-   } 
+   }
 
- 
+
+}
+
+
+ /* Phu Kien */
+ .phukien_container {
+   margin-bottom: 60px;
+
+ }
+
+ .phukien__item {
+   background-color: gray;
+   border-radius: 3px;
+   box-shadow: 0 3px 10px 0 rgba(255, 255, 255, 0.1), 0 2px 6px 2px rgba(255, 255, 255, 0.15);
+
+}
+
+.phukien__img {
+   width: 100%;
+}
+
+.phukien__img>img {
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+   border-radius: 3px;
+}
+
+.phukien__desc {
+   display: block;
+   padding: 3px 10px 10px 10px;
+
+}
+
+.phukien__desc>p {
+   display: block;
+   color: white;
+   font-size: 2.1rem;
+
+}
+
+.phukien_btn {
+   display: block;
+   margin-left: auto;
+   padding: 6px 12px;
+   margin-right: 3px;
+   margin-bottom: 3px;
+   margin-top: 3px;
+   border-radius: 10px;
+   background-color: orange;
+
 }
