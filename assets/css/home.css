@@ -222,6 +222,7 @@
    outline: none;
 }
 
+/* Mobile */
 @media (max-width:739px) {
    :root {
       --banner-height: 500px;
