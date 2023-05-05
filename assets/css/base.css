@@ -1,8 +1,6 @@
 :root {
    /* Size */
    --header-height: 60px;
-
-
    /* Color */
    --black-color: #000;
    --white-color: #ffffff;
@@ -11,9 +9,7 @@
    --choose-color: rgba(255, 255, 255, 1);
    --choose-background-color: #2e2e2e;
    --second-color: #FFBB00;
-
 }
-
 
 * {
    box-sizing: border-box;
@@ -57,7 +53,6 @@ html {
 .header__nav {
    display: flex;
    margin-left: auto;
-
 }
 
 /* Navigation */
@@ -80,7 +75,6 @@ html {
    padding: 0 0 0 20px;
    line-height: var(--header-height);
    font-weight: 500;
-
    /* Animation */
    background:
       linear-gradient(to right,
@@ -120,8 +114,6 @@ html {
    transform: translateX(1px) translateY(1px);
 }
 
-
-
 /* Cart */
 .header-nav__cart,
 .nav-mobile__list__icon,
@@ -158,8 +150,9 @@ html {
 }
 
 .login-title>a {
-   text-decoration: no;
+   text-decoration: none;
    color: white;
+
    font-size: 1.6rem;
    font-weight: 500;
    line-height: var(--header-height);
@@ -184,7 +177,6 @@ html {
    margin-top: 12px;
    font-weight: 500;
 }
-
 
 .footer-col__title {
    color: var(--second-color);
@@ -278,14 +270,11 @@ html {
       display: inline-block;
    }
 
-
-
    .list__icon,
    .cart__icon,
    .login__icon {
       font-size: 2.3rem;
    }
-
 
    .nav-mobile__list__icon {
       display: block;
@@ -380,15 +369,12 @@ html {
    max-width: 16%;
 }
 
-
 .nav-mobile__link {
    font-size: 1.6rem;
-
    color: white;
    display: block;
    line-height: 1.6rem;
    font-weight: 400;
-
 }
 
 .nav-mobile__link--current {
@@ -396,7 +382,6 @@ html {
    font-size: 1.8rem;
    line-height: 1.8rem;
    font-weight: 500;
-
 }
 
 .mobile-separator {
@@ -417,7 +402,6 @@ html {
 .nav_input:checked~.navMobile {
    transform: translateX(-100%);
 }
-
 
 .nav-mobile__list {
    display: flex;
@@ -445,29 +429,20 @@ html {
    display: none;
 }
 
-
 /* Cart */
-
 .cart__input:checked~.cart-overlay {
    display: none;
 }
 
-
-
-
 .cart__input:checked~.cart-container {
    display: none;
 }
-
-
-
 
 .cart__title {
    font-size: 4rem;
    line-height: 4rem;
    color: white;
    margin-left: 10px;
-
 }
 
 .cart__item {
@@ -489,12 +464,10 @@ html {
 
 .cart__item__position {
    display: inline;
-
 }
 
 .cart__item__title {
    display: inline;
-
 }
 
 .cart__item__cost {
@@ -515,13 +488,14 @@ html {
 
 .cart__item__quanlity {
    display: inline;
+}
 
-
+.cart__list {
+   list-style-type: none;
 }
 
 .cart__total {
    position: absolute;
-
    right: 10px;
    left: 10px;
    bottom: 30px;

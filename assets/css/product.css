@@ -155,8 +155,10 @@
    outline: none;
    border: none;
    width: 120px;
+}
 
-
+.desc__btn:active {
+   border: 2px solid white;
 }
 
 /* >= Tablet */
@@ -165,15 +167,10 @@
    .bike__img {
       top: 0%;
       left: -40%;
-
-
-
    }
-
    .bike__img>img {
       transform: scale(0.5);
    }
-
    .bike__desc {
       margin-right: 10px;
    }
@@ -192,27 +189,20 @@
    .bike__img {
       top: -28%;
       left: -36%;
-
-
-
    }
 
    .bike__img>img {
       transform: scale(0.4);
    }
-
    .bike__desc {
       margin-right: 50px;
    }
-
-
 }
 
 
 /* Phu Kien */
 .phukien_container {
    margin-bottom: 60px;
-
 }
 
 .phukien__item {
