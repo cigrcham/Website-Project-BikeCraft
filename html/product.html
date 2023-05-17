@@ -55,7 +55,9 @@
                   <!-- Cart -->
                   <!-- Display none: cart__icon--hide -->
                   <label for="cart--state" class="header-nav__cart ">
-                     <i class="cart__icon fa-solid fa-cart-shopping"></i>
+                     <i class="cart__icon fa-solid fa-cart-shopping">
+                        <p id="cart_quantity"></p>
+                     </i>
                   </label>
                   <!-- Login -->
                   <div class="header-nav__login">
@@ -70,9 +72,9 @@
          <!-- Overlay Cart  -->
          <input type="checkbox" id="cart--state" class="cart__input" checked>
          <label for="cart--state" class="cart-overlay"></label>
-
          <div class="cart-container">
             <h3 class="cart__title">
+               <i class="fa-solid fa-cart-shopping"></i>
                Giỏ hàng
             </h3>
             <ul class="cart__list">
@@ -82,27 +84,42 @@
                      <p class="cart__item__title">Xe đạp Gammax</p>
                   </div>
                   <div class="item-bottom">
-                     <p class="cart__item__cost">4.000.000</p>
-                     <button class="cart__item__minus">-</button>
-                     <div class="cart__item__quanlity">2</div>
-                     <button class="cart__item__plus">+</button>
-                     <button class="cart__item__delete">
-                        <i class="fa-solid fa-trash"></i>
-                     </button>
+                     <p class="cart__item__cost">4.000.000đ</p>
+                     <div class="btn--icon">
+                        <button class="cart__item__minus">
+                           <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <div class="cart__item__quantity">2</div>
+                        <button class="cart__item__plus">
+                           <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <button class="cart__item__delete">
+                           <i class="fa-solid fa-trash"></i>
+                        </button>
+                     </div>
                   </div>
                </li> -->
+               <!-- <li class="cart-separator">
+               </li> -->
+               <!-- <li class="total_container">
+                  <h4 class="total__title">Tổng tiền:</h4>
+                  <p class="total__num">${total}</p>
+               </li> -->
             </ul>
-            <!-- 
-            <div class="cart__total">
-               <h4 class="total__title">Tổng tiền: </h4>
-               <p class="total__num">10.000.000</p>
-            </div> -->
+
+            <button class="btn__pay">
+               Thanh Toán
+            </button>
+
+            <!-- Button close in Top-Right -->
             <label for="cart--state" class="cart-close">
                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                   <path
                      d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
                </svg>
             </label>
+
+
          </div>
       </header>
       <div class="app_container">
@@ -141,7 +158,7 @@
                         14.000.000
                      </div>
                   </div>
-                  <button class="desc__btn" onclick="increaseQuantity(true, 0)">Mua</button>
+                  <button class="desc__btn" onclick="changeQuantity(true, 0)">Mua</button>
                </div>
             </div>
             <div class="row bike__item">
@@ -151,7 +168,7 @@
 
                <div class="col l-8 m-8 c-12 ">
                   <div class="bike__desc">
-                     <h6 class="desc__title">Xe đạp địa hình MTB </h6>
+                     <h6 class="desc__title">Xe địa hình MTB </h6>
                      <p class="desc__desc">Mô tả</p>
                      <ul class="desc__list">
                         <li class="desc__item">
@@ -175,7 +192,7 @@
                         5.000.000
                      </div>
                   </div>
-                  <button class="desc__btn" onclick="increaseQuantity(true, 1)">Mua</button>
+                  <button class="desc__btn" onclick="changeQuantity(true, 1)">Mua</button>
                </div>
             </div>
             <div class="row bike__item">
@@ -208,13 +225,13 @@
                         4.000.000
                      </div>
                   </div>
-                  <button class="desc__btn" onclick="increaseQuantity(true, 2)">Mua</button>
+                  <button class="desc__btn" onclick="changeQuantity(true, 2)">Mua</button>
                </div>
             </div>
-            <div class="row bike-ShowMore">
-               <p>
+            <div class="row ">
+               <button class="bike-ShowMore">
                   Show More
-               </p>
+               </button>
             </div>
             <!-- Product -->
             <div class="row product__title">
@@ -229,7 +246,7 @@
                      <div class="phukien__desc">
                         <p class="phukien__title">Mũ</p>
                         <p class="phukien__cost">100.000</p>
-                        <button class="phukien_btn" onclick="increaseQuantity(true, 3)">Mua</button>
+                        <button class="phukien_btn" onclick="changeQuantity(true, 3)">Mua</button>
                      </div>
                   </div>
                </div>
@@ -241,7 +258,7 @@
                      <div class="phukien__desc">
                         <p class="phukien__title">Tay lái</p>
                         <p class="phukien__cost">1.000.000</p>
-                        <button class="phukien_btn" onclick="increaseQuantity(true, 4)">Mua</button>
+                        <button class="phukien_btn" onclick="changeQuantity(true, 4)">Mua</button>
                      </div>
                   </div>
                </div>
@@ -253,7 +270,7 @@
                      <div class="phukien__desc">
                         <p class="phukien__title">Chân chống</p>
                         <p class="phukien__cost">300.000</p>
-                        <button class="phukien_btn" onclick="increaseQuantity(true, 5)">Mua</button>
+                        <button class="phukien_btn" onclick="changeQuantity(true, 5)">Mua</button>
                      </div>
                   </div>
                </div>
@@ -265,15 +282,15 @@
                      <div class="phukien__desc">
                         <p class="phukien__title">Bánh xe</p>
                         <p class="phukien__cost">400.000</p>
-                        <button class="phukien_btn" onclick="increaseQuantity(true, 6)">Mua</button>
+                        <button class="phukien_btn" onclick="changeQuantity(true, 6)">Mua</button>
                      </div>
                   </div>
                </div>
             </div>
-            <div class="row bike-ShowMore">
-               <p>
+            <div class="row ">
+               <button class="bike-ShowMore">
                   Show More
-               </p>
+               </button>
             </div>
          </div>
       </div>
@@ -290,7 +307,7 @@
                   </h3>
                </div>
                <div class="col l-4 m-6 c-6">
-                  <h4 class="footer-col__title">Contacts</h4>
+                  <h4 class="footer-col__title">Liên Hệ</h4>
                   <ul class="footer__list">
                      <li class="footer__info">
                         <a class="footer__mail" href="tel:+8468686868">+8468686868</a>
@@ -316,11 +333,11 @@
                   </ul>
                </div>
                <div class="col l-4 m-6 c-6">
-                  <h4 class="footer-col__title">Informations</h4>
+                  <h4 class="footer-col__title">Giới Thiệu</h4>
                   <ul class="footer__list">
-                     <li class="footer__info"><a href="/index.html">Abouts</a></li>
+                     <li class="footer__info"><a href="/index.html">Thông Tin</a></li>
                      <li class="footer__info">
-                        <a href="/html/contact.html">Contacts</a>
+                        <a href="/html/contact.html">Liên Hệ</a>
                      </li>
                      <div class="separator"></div>
                      <li class="footer__info author">Cigrcham&#169;2023</li>

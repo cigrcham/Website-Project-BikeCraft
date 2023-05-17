@@ -26,7 +26,7 @@
    margin-left: 0;
    font-weight: 300;
    line-height: 3rem;
-   text-align: justify;
+   text-align: start;
 }
 
 .banner-content__title,
@@ -34,6 +34,7 @@
    color: white;
    font-size: 5rem;
    margin-bottom: 40px;
+   line-height: 5rem;
 }
 
 .banner__corner {
@@ -122,7 +123,7 @@
    width: 100%;
    height: 250px;
    object-fit: cover;
-   
+
 }
 
 .product-item__content {
@@ -141,11 +142,8 @@
    margin-bottom: 40px;
 }
 
-
-
 .app-info {
    margin-top: 30px;
-
 }
 
 .info-container {
@@ -232,6 +230,12 @@
    .banner__corner {
       left: 80%;
       bottom: 36px;
+   }
+
+   .banner,
+   .container__product,
+   .container--brand {
+      padding: 0 10px;
    }
 
 }

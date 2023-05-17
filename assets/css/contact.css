@@ -96,11 +96,13 @@
 
 /* Mobile */
 @media (max-width:739px) {
-
-
    .banner__corner {
       left: 80%;
       bottom: 36px;
+   }
+
+   .info, .location_title, .map {
+      padding: 0 16px;
    }
    .footer {
       margin-top: 500px;
