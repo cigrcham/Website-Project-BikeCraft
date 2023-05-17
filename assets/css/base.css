@@ -161,7 +161,6 @@ html {
    width: 120px;
    font-weight: 500;
    line-height: var(--header-height);
-   transition: color 0.5s linear;
 }
 
 .login-title>a:hover {
