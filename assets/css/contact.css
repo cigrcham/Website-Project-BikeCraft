@@ -92,16 +92,17 @@
 }
 .location:hover {
    box-shadow: 0 1px 20px 0 rgba(60, 64, 67, .1), 1px 2px 16px 20px rgba(60, 64, 67, .15);
-
 }
 
 /* Mobile */
 @media (max-width:739px) {
-
-
    .banner__corner {
       left: 80%;
       bottom: 36px;
+   }
+
+   .info, .location_title, .map {
+      padding: 0 16px;
    }
    .footer {
       margin-top: 500px;

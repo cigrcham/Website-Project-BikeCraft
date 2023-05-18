@@ -8,7 +8,6 @@
    <link rel="stylesheet" href="/assets/css/base.css">
    <link rel="stylesheet" href="/assets/css/contact.css">
    <link rel="icon" href="/assets/img/logo-head.png">
-
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,9 +28,9 @@
             </h3>
             <ul class="nav-mobile__list nav-mobile__list--hide">
                <div class="mobile-separator"></div>
-               <li><a href="/index.html" class="nav-mobile__link">About</a></li>
-               <li><a href="/html/product.html" class="nav-mobile__link">Product</a></li>
-               <li><a href="/html/contact.html" class="nav-mobile__link nav-mobile__link--current">Contacts</a></li>
+               <li><a href="/index.html" class="nav-mobile__link">Thông Tin</a></li>
+               <li><a href="/html/product.html" class="nav-mobile__link">Sản Phẩm</a></li>
+               <li><a href="/html/contact.html" class="nav-mobile__link--current">Liên Hệ</a></li>
             </ul>
             <label for="nav--state" class="navMobile-close">
                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -40,6 +39,7 @@
                </svg>
             </label>
          </div>
+         <!-- Navigation Desktop -->
          <div class="grid wide">
             <div class="row">
                <label for="nav--state" class="nav-mobile__list__icon">
@@ -49,21 +49,16 @@
                <a href="/index.html" class="header__logo">bikcraft</a>
                <div class=" header__nav">
                   <ul class="header-nav__list header-nav__list--hide">
-                     <li><a href="/index.html" class="header-nav__link">About</a></li>
-                     <li><a href="/html/product.html" class="header-nav__link">Product</a></li>
-                     <li><a href="/html/contact.html" class="header-nav__link-current">Contacts</a></li>
+                     <li><a href="/index.html" class="header-nav__link">Thông Tin</a></li>
+                     <li><a href="/html/product.html" class="header-nav__link">Sản Phẩm</a></li>
+                     <li><a href="/html/contact.html" class="header-nav__link-current">Liên Hệ</a></li>
                   </ul>
-                  <!-- Cart -->
-                  <!-- Display none: cart__icon--hide -->
-                  <div class="header-nav__cart cart__icon--hide">
-                     <i class="cart__icon fa-solid fa-cart-shopping"></i>
-                  </div>
                   <!-- Login -->
                   <div class="header-nav__login">
                      <!-- Display none: login__icon--hide -->
                      <i class="login__icon fa-regular fa-circle-user"></i>
                      <!-- Display none: login__title--hide -->
-                     <span class="login-title login__title--hide">Login</span>
+                     <span class="login-title login__title--hide">Đăng Nhập</span>
                   </div>
                </div>
             </div>
@@ -72,43 +67,41 @@
       <div class="app-content">
          <div class="grid wide">
             <div class="row">
-               <div class="col l-12 m-12 c-12">
-                  <div class="info">
-                     <h3 class="contact--title">CONTACT US</h3>
-                     <div class="container">
-                        <h4 class="container__title">bikecraft</h4>
-                        <div class="grid-container">
-                           <ul class="grid-list">
-                              <li class="grid-list__item gird--title">
-                                 <i class="fa-solid fa-phone"></i>
-                                 +8468686868
-                              </li>
-                              <li class="grid-list__item">
-                                 <i class="fa-solid fa-location-dot"></i>
-                                 Ha Noi city
-                              </li>
-                              <li class="grid-list__item">
-                                 <i class="fa-solid fa-location-dot"></i>
-                                 Ho Chi Minh city
-                              </li>
-                           </ul>
-                           <div class="grid__logo">
-                              <img src="/assets/img/logo-head.png" alt="" class="grid__logo_img">
-                           </div>
+               <div class="col l-12 m-12 c-12 info">
+                  <h3 class="contact--title">Thông tin liên hệ</h3>
+                  <div class="container">
+                     <h4 class="container__title">bikecraft</h4>
+                     <div class="grid-container">
+                        <ul class="grid-list">
+                           <li class="grid-list__item gird--title">
+                              <i class="fa-solid fa-phone"></i>
+                              +8468686868
+                           </li>
+                           <li class="grid-list__item">
+                              <i class="fa-solid fa-location-dot"></i>
+                              Ha Noi city
+                           </li>
+                           <li class="grid-list__item">
+                              <i class="fa-solid fa-location-dot"></i>
+                              Ho Chi Minh city
+                           </li>
+                        </ul>
+                        <div class="grid__logo">
+                           <img src="/assets/img/logo-head.png" alt="" class="grid__logo_img">
                         </div>
                      </div>
                   </div>
                </div>
                <div class="col l-12 m-12 c-12 location_title">
                   <i class="fa-solid fa-location-dot"></i>
-                  Location
+                  Địa Chỉ
                </div>
-               <div class="col l-6 m-6 c-12">
+               <div class="col l-6 m-6 c-12 map">
                   <div class="location location--hanoi">
                      <img src="/assets/img/location_hanoi.png" alt="">
                   </div>
                </div>
-               <div class="col l-6 m-6 c-12 ">
+               <div class="col l-6 m-6 c-12 map">
                   <div class="location location--hcm">
                      <img src="/assets/img/location_hcm.png" alt="">
                   </div>
@@ -130,7 +123,7 @@
                   </h3>
                </div>
                <div class="col l-4 m-6 c-6">
-                  <h4 class="footer-col__title">Contacts</h4>
+                  <h4 class="footer-col__title">Liên Hệ</h4>
                   <ul class="footer__list">
                      <li class="footer__info">
                         <a class="footer__mail" href="tel:+8468686868">+8468686868</a>
@@ -156,13 +149,13 @@
                   </ul>
                </div>
                <div class="col l-4 m-6 c-6">
-                  <h4 class="footer-col__title">Informations</h4>
+                  <h4 class="footer-col__title">Giới Thiệu</h4>
                   <ul class="footer__list">
                      <li class="footer__info">
-                        <a href="index.html">Abouts</a>
+                        <a href="/index.html">Thông Tin</a>
                      </li>
                      <li class="footer__info">
-                        <a href="/html/contact.html">Contacts</a>
+                        <a href="/html/contact.html">Liên Hệ</a>
                      </li>
                      <div class="separator"></div>
                      <li class="footer__info author">Cigrcham&#169;2023</li>
@@ -171,24 +164,6 @@
             </div>
          </div>
       </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
    </div>
 </body>
 
