@@ -1,9 +1,13 @@
 var listProductCart = [];
-var bikeLists = document.querySelectorAll('.bike__desc')
-var productLists = document.querySelectorAll('.phukien__item');
-var quantity = 0;
-var total = 0;
 
+var bikeLists = document.querySelectorAll('.bike__desc')
+
+var productLists = document.querySelectorAll('.phukien__item');
+
+var quantity = 0;
+
+var total = 0;
+// Add click for button Payment
 var buttonPay = document.querySelector('.btn__pay');
 buttonPay.addEventListener('click', payBill);
 
@@ -30,7 +34,6 @@ productLists.forEach(function (item) {
    }
    listProductCart.push(object);
 });
-
 
 // Link tag to class .cart__list
 // Add Item to List Bill
@@ -111,10 +114,8 @@ function showTotal() {
       `;
       cartLists.appendChild(divTotal);
       buttonPay.style.display = 'block';
-   } else {
-
+   } else
       buttonPay.style.display = 'none';
-   }
 }
 
 // Delete product from Cart
@@ -145,11 +146,9 @@ function convertToCurrency(numberStr) {
    return vndFormatted;
 }
 
-
 // Button Pay Onclick
 function payBill() {
-   if (
-      confirm("Bạn có muốn thanh toán không?")) {
+   if (confirm("Bạn có muốn thanh toán không?")) {
       listProductCart.forEach(function (item) {
          item.count = 0;
       })
