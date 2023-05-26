@@ -23,6 +23,10 @@ body {
    overflow-x: hidden;
 }
 
+/**
+1rem = 16px
+then 1 rem = 10 px(font-size = 62.5%)
+*/
 html {
    font-size: 62.5%;
    line-height: 1.6rem;
@@ -284,8 +288,6 @@ html {
    top: 1rem;
    right: 1rem
 }
-
-
 
 /* Footer */
 .footer {
